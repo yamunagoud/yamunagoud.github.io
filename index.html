@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- =========================
+			 META
+		========================== -->
+		<meta charset="UTF-8">
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0">
+		<meta
+			name="description"
+			content="Cybersecurity portfolio of Vanga Yamuna showcasing web application security, network penetration testing, malware analysis, security research, and hands-on cybersecurity projects.">
+		<meta
+			name="keywords"
+			content="Cybersecurity, Penetration Testing, Web Security, Malware Analysis, Application Security, Burp Suite, Nmap, Python, Security Research">
+		<meta
+			name="author"
+			content="Vanga Yamuna">
+		<title>
+			Vanga Yamuna | Cybersecurity Portfolio
+		</title>
+
+		<!-- =========================
+			 FONTAWESOME
+		========================== -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+		<!-- =========================
+			 CSS FILES
+		========================== -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/hero.css">
+		<link rel="stylesheet" href="css/about.css">
+		<link rel="stylesheet" href="css/projects.css">
+		<link rel="stylesheet" href="css/labs.css">
+		<link rel="stylesheet" href="css/certificates.css">
+		<link rel="stylesheet" href="css/contact.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/responsive.css">
+	</head>
+	<body>
+		<!-- ==================================================
+			 HEADER
+		================================================== -->
+		<header class="header">
+			<div class="container">
+				<!-- Logo -->
+				<a href="#hero" class="logo">
+					<span>Vanga Yamuna</span>
+				</a>
+				<!-- Navigation -->
+				<nav class="navbar" aria-label="Primary Navigation">
+					<ul class="nav-list">
+						<li><a href="#hero" class="active">
+							Home
+						</a><li>
+						<li><a href="#about">
+							About
+						</a><li>
+						<li><a href="#projects">
+							Projects
+						</a><li>
+						<li><a href="#labs">
+							Labs
+						</a><li>
+						<li><a href="#certificates">
+							Certificates
+						</a><li>
+						<li><a href="#contact">
+							Contact
+						</a><li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<!-- ==================================================
+			 HERO SECTION
+		================================================== -->
+		<section id="hero">
+			<div class="container hero-container">
+				<!-- ===========================
+					 LEFT CONTENT
+				============================ -->
+				<div class="hero-content">
+					<span class="section-label">
+						Welcome to My Portfolio
+					</span>
+					<h1>
+						Application Security
+						<br>
+						&amp; Penetration Testing
+					</h1>
+					<div class="hero-tagline">
+						<span>Application Security</span>
+						<span>•</span>
+						<span>Security Research</span>
+						<span>•</span>
+						<span>Offensive Security</span>
+					</div>
+					<p>
+						Building practical cybersecurity expertise through
+						hands-on penetration testing, vulnerability assessment,
+						security research, automation, and real-world labs.
+					</p>
+
+					<!-- Buttons -->
+					<div class="hero-buttons">
+						<a
+							href="VangaYamuna.pdf"
+							class="btn btn-primary">
+							↓ Download CV
+						</a>
+						<a
+							href="https://github.com/yamunagoud"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-secondary">
+							<i class="fa-brands fa-github"></i>
+
+							GitHub
+						</a>
+						<a
+							href="https://www.linkedin.com/in/yamuna-goud-1801031a0/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-secondary">
+							<i class="fa-brands fa-linkedin"></i>
+							LinkedIn
+						</a>
+					</div>
+				</div>
+				<!-- ===========================
+					 TERMINAL
+				============================ -->
+				<aside
+    class="hero-terminal"
+    aria-label="Terminal Preview">
+
+    <div class="terminal-header">
+
+        <div class="terminal-buttons"
+             aria-hidden="true">
+
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+
+        </div>
+
+        <span class="terminal-title">
+
+            yamuna@portfolio:~$
+
+        </span>
+
+    </div>
+
+	<pre id="terminal-output"></pre>
+
+</aside>
+			</div>
+		</section>
+		
+
+		<!-- ==================================================
+			 ABOUT SECTION
+		================================================== -->
+		<section id="about">
+			<div class="container">
+				<!-- ==========================================
+					 ABOUT INTRO
+				=========================================== -->
+				<div class="about-grid">
+					<!-- Left Content -->
+					<div class="about-content">
+						<span class="section-label">
+							About Me
+						</span>
+						<h2 class="section-title">
+							Building Practical Cybersecurity Skills
+						</h2>
+						<p class="section-description">
+							My interest in cybersecurity comes from understanding how
+							applications work beneath the surface and identifying
+							security weaknesses before they become real risks.
+							Through hands-on labs, personal projects, and continuous
+							research, I have developed practical experience in
+							web application security, network penetration testing,
+							Active Directory security, malware analysis,
+							and Python automation.
+						</p>
+						<p>
+							I believe cybersecurity is best learned through practice.
+							Every project, lab, and security research documented
+							in this portfolio reflects my commitment to continuous
+							learning, problem solving, and developing practical
+							offensive security skills.
+						</p>
+					</div>
+					<!-- ==========================================
+						 QUICK FACTS
+					=========================================== -->
+					<aside class="card about-card">
+						<h3>
+							Quick Facts
+						</h3>
+						<div class="about-fact">
+							<i class="fa-solid fa-location-dot"></i>
+							<div>
+								<strong>Location</strong>
+								<p>Hyderabad, India</p>
+							</div>
+						</div>
+						<div class="about-fact">
+							<i class="fa-solid fa-briefcase"></i>
+							<div>
+								<strong>Experience</strong>
+								<p>4+ Years in IT</p>
+							</div>
+						</div>
+						<div class="about-fact">
+							<i class="fa-solid fa-crosshairs"></i>
+							<div>
+								<strong>Current Focus</strong>
+								<p>Web &amp; Network Penetration Testing</p>
+							</div>
+						</div>
+						<div class="about-fact">
+							<i class="fa-solid fa-book-open"></i>
+							<div>
+								<strong>Learning</strong>
+								<p>Red Teaming &amp; Malware Analysis</p>
+							</div>
+						</div>
+					</aside>
+				</div>
+				<!-- Divider -->
+				<div class="section-divider"></div>
+
+				<!-- ==========================================
+					 TECHNICAL EXPERTISE
+				=========================================== -->
+				<div class="expertise-section">
+					<span class="section-label">
+						Technical Expertise
+					</span>
+					<h2 class="section-title">
+						Practical Security Skills
+					</h2>
+					<p class="section-description">
+						Hands-on cybersecurity knowledge developed through
+						penetration testing labs, security research,
+						automation projects, and continuous learning.
+					</p>
+					<div class="expertise-grid">
+						<!-- Card -->
+						<article class="card expertise-card">
+							<i class="fa-solid fa-globe expertise-icon"></i>
+							<h3>
+								Web Application Security
+							</h3>
+							<div class="chip-group">
+								<span class="chip">SQL Injection</span>
+								<span class="chip">Cross-Site Scripting (XSS)</span>
+								<span class="chip">Insecure Direct Object Reference (IDOR)</span>
+								<span class="chip">Server-Side Request Forgery (SSRF)</span>
+								<span class="chip">XML External Entity (XXE)</span>
+								<span class="chip">Authentication Testing</span>
+							</div>
+						</article>
+						<!-- Card -->
+						<article class="card expertise-card">
+							<i class="fa-solid fa-network-wired expertise-icon"></i>
+							<h3>
+								Network Penetration Testing
+							</h3>
+							<div class="chip-group">
+								<span class="chip">Enumeration</span>
+								<span class="chip">Nmap</span>
+								<span class="chip">SMB</span>
+								<span class="chip">Nessus</span>
+								<span class="chip">Metasploit</span>
+								<span class="chip">Service Validation</span>
+							</div>
+						</article>
+						<!-- Card -->
+						<article class="card expertise-card">
+							<i class="fa-solid fa-code expertise-icon"></i>
+							<h3>
+								Automation &amp; Scripting
+							</h3>
+							<div class="chip-group">
+								<span class="chip">Python</span>
+								<span class="chip">Bash</span>
+								<span class="chip">Requests</span>
+								<span class="chip">BeautifulSoup</span>
+								<span class="chip">Security Automation</span>
+							</div>
+						</article>
+						<!-- Card -->
+						<article class="card expertise-card">
+							<i class="fa-solid fa-toolbox expertise-icon"></i>
+							<h3>
+								Security Tools
+							</h3>
+							<div class="chip-group">
+								<span class="chip">Burp Suite</span>
+								<span class="chip">Wireshark</span>
+								<span class="chip">Kali Linux</span>
+								<span class="chip">Gobuster</span>
+								<span class="chip">SQLMap</span>
+								<span class="chip">REMnux</span>
+							</div>
+						</article>
+						<!-- Card -->
+						<article class="card expertise-card">
+							<i class="fa-solid fa-shield-halved expertise-icon"></i>
+							<h3>
+								Frameworks
+							</h3>
+							<div class="chip-group">
+								<span class="chip">OWASP Top 10</span>
+								<span class="chip">MITRE ATT&amp;CK</span>
+								<span class="chip">PTES</span>
+								<span class="chip">Cyber Kill Chain</span>
+								<span class="chip">CVSS</span>
+							</div>
+						</article>
+						<!-- Card -->
+						<article class="card expertise-card">
+							<i class="fa-solid fa-flask expertise-icon"></i>
+							<h3>
+								Security Research
+							</h3>
+							<div class="chip-group">
+								<span class="chip">Malware Analysis</span>
+								<span class="chip">Active Directory</span>
+								<span class="chip">Threat Research</span>
+								<span class="chip">Technical Documentation</span>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==================================================
+			 PROJECTS SECTION
+		================================================== -->
+		<section id="projects">
+			<div class="container">
+				<!-- ==========================================
+					 SECTION HEADER
+				=========================================== -->
+				<div class="section-header">
+					<span class="section-label">
+						Projects
+					</span>
+					<h2 class="section-title">
+						Practical Cybersecurity Projects
+					</h2>
+					<p class="section-description">
+						A collection of hands-on cybersecurity projects focused on
+						penetration testing, malware analysis, lab development,
+						security automation, and practical offensive security
+						skills.
+					</p>
+				</div>
+				<!-- ==========================================
+					 MALWARE ANALYSIS LAB
+				=========================================== -->
+				<article class="card project-card">
+					<div class="project-header">
+						<div class="project-content">
+							<span class="project-category">
+								<i class="fa-solid fa-flask"></i>
+								Security Research Project
+							</span>
+							<h3>
+								<i class="fa-solid fa-shield-virus"></i>
+								Malware Analysis Lab
+							</h3>
+							<p>
+								Designed and documented a secure malware analysis
+								environment using
+								<strong>VirtualBox</strong>,
+								<strong>Windows 10</strong>,
+								<strong>FLARE VM</strong>,
+								<strong>REMnux</strong>,
+								<strong>Host-Only Networking</strong>,
+								and
+								<strong>INetSim</strong>
+								to safely perform static and dynamic malware
+								analysis in a fully isolated environment.
+							</p>
+						</div>
+						<figure class="project-image">
+							<a
+								href="Projects/malware-lab/images/malware-lab.png"
+								target="_blank"
+								rel="noopener noreferrer">
+								<img
+									src="Projects/malware-lab/images/malware-lab.png"
+									alt="Malware Analysis Lab Environment"
+									loading="lazy">
+							</a>
+						</figure>
+					</div>
+					<!-- Statistics -->
+					<div class="project-stats">
+						<span>
+							<i class="fa-solid fa-file-lines"></i>
+							35 Pages
+						</span>
+						<span>
+							<i class="fa-solid fa-computer"></i>
+							2 Virtual Machines
+						</span>
+						<span>
+							<i class="fa-solid fa-screwdriver-wrench"></i>
+							6 Tools
+						</span>
+						<span>
+							<i class="fa-solid fa-shield-halved"></i>
+							Isolated Lab
+						</span>
+					</div>
+					<!-- Technology Stack -->
+					<div class="tech-stack">
+						<span>VirtualBox</span>
+						<span>Windows 10</span>
+						<span>FLARE VM</span>
+						<span>REMnux</span>
+						<span>INetSim</span>
+						<span>Host-Only Networking</span>
+					</div>
+					<!-- Highlights -->
+					<div class="project-highlights">
+						<span>Static Analysis</span>
+						<span>Dynamic Analysis</span>
+						<span>Network Isolation</span>
+						<span>Internet Simulation</span>
+						<span>Documentation</span>
+					</div>
+					<!-- Buttons -->
+					<div class="project-links">
+						<a
+							href="https://github.com/yamunagoud/007-Malware-Analysis-Lab-Setup/blob/main/Malware_Analysis_Lab_Setup.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-primary">
+							<i class="fa-solid fa-file-pdf"></i>
+							Documentation
+						</a>
+						<a
+							href="https://github.com/yamunagoud/007-Malware-Analysis-Lab-Setup"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-secondary">
+							<i class="fa-brands fa-github"></i>
+							GitHub
+						</a>
+					</div>
+				</article>
+				<!-- ==========================================
+					 PERSONAL PENETRATION TESTING LAB
+				=========================================== -->
+				<article class="card project-card">
+					<div class="project-header">
+						<div class="project-content">
+							<span class="project-category">
+								<i class="fa-solid fa-house"></i>
+								Home Lab
+							</span>
+							<h3>
+								<i class="fa-solid fa-magnifying-glass"></i>
+								Personal Penetration Testing Lab
+							</h3>
+							<p>
+								Built an isolated penetration testing laboratory
+								using VirtualBox with multiple operating systems
+								and intentionally vulnerable machines, including
+								Kali Linux, Metasploitable, OWASP Broken Web
+								Applications, Windows 10, Windows 7, Windows XP,
+								Ubuntu, and Parrot Security OS.
+
+								The environment is used to practice reconnaissance,
+								web application testing, network enumeration,
+								exploitation, and vulnerability validation.
+							</p>
+						</div>
+						<figure class="project-image">
+							<a
+								href="Projects/pentesting_lab/images/virtualbox-overview.png"
+								target="_blank"
+								rel="noopener noreferrer">
+
+								<img
+									src="Projects/pentesting_lab/images/virtualbox-overview.png"
+									alt="Personal Penetration Testing Lab"
+									loading="lazy">
+							</a>
+						</figure>
+					</div>
+					<!-- Statistics -->
+					<div class="project-stats">
+						<span>
+							<i class="fa-solid fa-computer"></i>
+							10+ Virtual Machines
+						</span>
+						<span>
+							<i class="fa-solid fa-screwdriver-wrench"></i>
+							10+ Security Tools
+						</span>
+						<span>
+							<i class="fa-solid fa-network-wired"></i>
+							Host-Only Network
+						</span>
+						<span>
+							<i class="fa-solid fa-shield-halved"></i>
+							Web & Network Testing
+						</span>
+					</div>
+					<!-- Technology Stack -->
+					<div class="tech-stack">
+						<span>VirtualBox</span>
+						<span>Kali Linux</span>
+						<span>Metasploitable</span>
+						<span>Burp Suite</span>
+						<span>Nmap</span>
+						<span>Metasploit</span>
+					</div>
+					<!-- Highlights -->
+					<div class="project-highlights">
+						<span>Network Enumeration</span>
+						<span>Web Application Testing</span>
+						<span>Vulnerability Validation</span>
+						<span>Exploitation Practice</span>
+						<span>Lab Documentation</span>
+					</div>
+					<!-- Buttons -->
+					<div class="project-links">
+						<a
+							href="https://github.com/yamunagoud/008-Personal-Pentesting-Lab/blob/main/README.md"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-primary">
+							<i class="fa-solid fa-file-lines"></i>
+							Documentation
+						</a>
+						<a
+							href="https://github.com/yamunagoud/008-Personal-Pentesting-Lab"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-secondary">
+							<i class="fa-brands fa-github"></i>
+							GitHub
+						</a>
+					</div>
+				</article>
+						<!-- ==========================================
+					 BUSINESS LOGIC TESTING AUTOMATION
+				=========================================== -->
+				<article class="card project-card">
+					<div class="project-header">
+						<div class="project-content">
+							<span class="project-category">
+								<i class="fa-solid fa-globe"></i>
+								Web Application Security
+							</span>
+							<h3>
+								<i class="fa-solid fa-gears"></i>
+								Business Logic Testing Automation
+							</h3>
+							<p>
+								Developed Python automation scripts to streamline
+								business logic testing by automating authentication
+								workflows, session management, CSRF token extraction,
+								and HTTP request manipulation while solving
+								PortSwigger Web Security Academy labs.
+
+								These automation scripts reduce repetitive testing,
+								improve efficiency, and simulate realistic attack
+								scenarios during security assessments.
+							</p>
+						</div>
+						<figure class="project-image">
+							<a
+								href="Projects/project-business-logic/images/Business_Lgic_VS/burp_proxy_And_Lab_Status.png"
+								target="_blank"
+								rel="noopener noreferrer">
+								<img
+									src="Projects/project-business-logic/images/Business_Lgic_VS/burp_proxy_And_Lab_Status.png"
+									alt="Business Logic Testing Automation"
+									loading="lazy">
+							</a>
+						</figure>
+					</div>
+					<!-- Statistics -->
+					<div class="project-stats">
+						<span>
+							<i class="fa-brands fa-python"></i>
+							Python Automation
+						</span>
+						<span>
+							<i class="fa-solid fa-flask"></i>
+							PortSwigger Labs
+						</span>
+						<span>
+							<i class="fa-solid fa-bolt"></i>
+							Workflow Automation
+						</span>
+						<span>
+							<i class="fa-solid fa-shield-halved"></i>
+							Business Logic Testing
+						</span>
+					</div>
+					<!-- Technology Stack -->
+					<div class="tech-stack">
+						<span>Python</span>
+						<span>Requests</span>
+						<span>BeautifulSoup</span>
+						<span>Burp Suite</span>
+						<span>HTTP</span>
+					</div>
+					<!-- Highlights -->
+					<div class="project-highlights">
+						<span>Authentication Automation</span>
+						<span>CSRF Token Handling</span>
+						<span>Session Management</span>
+						<span>HTTP Request Automation</span>
+						<span>Business Logic Testing</span>
+					</div>
+					<!-- Buttons -->
+					<div class="project-links">
+						<a
+							href="Projects/project-business-logic/project-business-logic.html"
+							class="btn btn-primary">
+
+							<i class="fa-solid fa-eye"></i>
+
+							View Project
+
+						</a>
+						<a
+							href="https://github.com/yamunagoud/001-Business-logic-vulnerability-scanner"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-secondary">
+							<i class="fa-brands fa-github"></i>
+							GitHub
+						</a>
+					</div>
+				</article>
+			</div>
+		</section>
+		
+		<!-- ==================================================
+			 LABS SECTION
+		================================================== -->
+		<section id="labs">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-label">
+						Labs & Write-ups
+					</span>
+					<h2 class="section-title">
+						Hands-on Labs & Technical Write-ups
+					</h2>
+					<p class="section-description">
+						 A growing collection of hands-on security labs and technical write-ups
+						documenting vulnerability research, attack techniques, and practical
+						cybersecurity learning.
+					</p>
+				</div>
+				<div class="labs-grid">
+					<a href="https://yamunagoud.notion.site/AD-BadSuccessor-3a6db86fab08809a94e8c525791358bc"
+					   class="labs-card-link"
+					   target="_blank"
+					   rel="noopener noreferrer">
+						<article class="card labs-card">
+							<div class="labs-content">
+								<!-- Category -->
+								<span class="labs-category">
+									<i class="fa-solid fa-shield-halved"></i>
+									Active Directory
+								</span>
+								<!-- Title -->
+								<h3>
+									BadSuccessor Attack
+									<i class="fa-solid fa-arrow-up-right-from-square"></i>
+								</h3>
+								<!-- Metadata -->
+								<div class="chip-group labs-meta">
+									<span class="chip">
+										<i class="fa-regular fa-calendar"></i>
+										25 Jul 2026
+									</span>
+									<span class="chip">
+										<i class="fa-solid fa-file-lines"></i>
+										Research
+									</span>
+									<span class="chip">
+										<i class="fa-solid fa-star"></i>
+										Intermediate
+									</span>
+									<span class="chip">
+										<i class="fa-regular fa-clock"></i>
+										20 min read
+									</span>
+								</div>
+								<!-- Description -->
+								<p>
+									Explore how the <strong>BadSuccessor</strong> attack abuses the
+									<strong>CREATE_CHILD</strong> permission to create a malicious
+									Delegated Managed Service Account (dMSA), obtain Kerberos tickets,
+									perform a DCSync attack, and ultimately compromise an Active Directory
+									domain.
+								</p>
+								<hr>
+								<!-- Tags -->
+								<div class="chip-group">
+
+									<span class="chip">Kerberos</span>
+									<span class="chip">bloodyAD</span>
+									<span class="chip">Impacket</span>
+									<span class="chip">dMSA</span>
+									<span class="chip">DCSync</span>
+								</div>
+							</div>
+						</article>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- ==================================================
+			 CERTIFICATES SECTION
+		================================================== -->
+		<section id="certificates">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-label">
+						Certificates
+					</span>
+					<h2 class="section-title">
+						Certifications & Achievements
+					</h2>
+					<p class="section-description">
+						Professional certifications and continuous learning
+						demonstrating my commitment to cybersecurity
+						and offensive security.
+					</p>
+				</div>
+				<div class="certificates-grid">
+					<article class="card certificate-card">
+
+						<div class="certificate-icon">
+							<i class="fa-solid fa-shield-halved"></i>
+						</div>
+
+						<h3>TryHackMe Achievements</h3>
+
+						<p>
+							Completed <strong>292+ hands-on rooms</strong>, earned
+							<strong>41 badges</strong>, achieved a
+							<strong>Top 1% global rank</strong>, and completed multiple
+							guided learning paths covering Web Security, Active Directory,
+							Privilege Escalation, and Offensive Security.
+						</p>
+
+						<div class="chip-group">
+
+							<span class="chip">292+ Rooms</span>
+
+							<span class="chip">41 Badges</span>
+
+							<span class="chip">Top 1%</span>
+
+							<span class="chip">Learning Paths</span>
+
+							<span class="chip">Certificates</span>
+
+						</div>
+
+						<a href="https://tryhackme.com/p/Yamunagoud"
+						   class="btn btn-primary"
+						   target="_blank"
+						   rel="noopener noreferrer">
+
+							View TryHackMe Profile
+
+						</a>
+
+					</article>
+					<article class="card certificate-card">
+
+						<div class="certificate-icon">
+							<i class="fa-solid fa-graduation-cap"></i>
+						</div>
+
+						<h3>Learning Roadmap</h3>
+
+						<p>
+							Continuously expanding my cybersecurity expertise by preparing
+							for industry-recognized certifications and strengthening
+							practical skills in penetration testing, Active Directory,
+							application security, and offensive security methodologies.
+						</p>
+
+						<div class="chip-group">
+
+							<span class="chip">eJPT</span>
+
+							<span class="chip">PNPT</span>
+
+							<span class="chip">CRTP</span>
+
+						</div>
+
+						<div class="roadmap-status">
+
+							<i class="fa-solid fa-circle-check"></i>
+
+							Currently Preparing
+
+						</div>
+
+					</article>
+				</div>
+			</div>
+		</section>
+		<!-- ==================================================
+			 CONTACT SECTION
+		================================================== -->
+		<section id="contact">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-label">
+						Contact
+					</span>
+					<h2 class="section-title">
+						Let's Connect
+					</h2>
+					<p class="section-description">
+						I'm always interested in cybersecurity discussions,
+						collaboration opportunities,
+						and challenging security roles.
+					</p>
+				</div>
+				<div class="contact-grid">
+					<article class="card contact-card">
+						<div class="contact-item">
+							<i class="fa-solid fa-envelope"></i>
+							<div>
+								<h3>Email</h3>
+								<a href="mailto:yamgoud123@gmail.com">
+									yamgoud123@gmail.com
+								</a>
+							</div>
+						</div>
+						<div class="contact-item">
+							<i class="fa-brands fa-linkedin"></i>
+							<div>
+								<h3>LinkedIn</h3>
+								<a
+									href="https://www.linkedin.com/in/yamuna-goud-1801031a0/"
+									target="_blank"
+									rel="noopener noreferrer">
+
+									linkedin.com/in/yamuna-goud-1801031a0
+
+								</a>
+							</div>
+						</div>
+						<div class="contact-item">
+							<i class="fa-brands fa-github"></i>
+							<div>
+								<h3>GitHub</h3>
+								<a
+									href="https://github.com/yamunagoud"
+									target="_blank"
+									rel="noopener noreferrer">
+
+									github.com/yamunagoud
+
+								</a>
+							</div>
+						</div>
+						<div class="contact-item">
+							<i class="fa-solid fa-location-dot"></i>
+							<div>
+								<h3>Location</h3>
+								<p>
+									Hyderabad, Telangana, India
+								</p>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==================================================
+			 FOOTER
+		================================================== -->
+		<footer class="footer">
+			<div class="container">
+				<p>
+
+					© 2026 Vanga Yamuna. All Rights Reserved.
+
+				</p>
+
+				<p>
+					Application Security • Penetration Testing • Security Research
+				</p>
+			</div>
+		</footer>
+
+		<!-- ==================================================
+			 JAVASCRIPT
+		================================================== -->
+		<script src="script.js"></script>
+    </body>
+</html>

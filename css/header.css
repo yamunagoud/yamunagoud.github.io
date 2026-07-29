@@ -1,0 +1,284 @@
+/* ==================================================
+   HEADER
+================================================== */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(15,23,42,.88);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    transition:all .35s ease;
+
+}
+
+
+/* Optional class for JavaScript */
+
+.header.scrolled{
+
+    background:rgba(15,23,42,.96);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.30);
+
+}
+
+
+/* ==================================================
+   HEADER CONTAINER
+================================================== */
+
+.header .container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    height:78px;
+
+}
+
+
+/* ==================================================
+   LOGO
+================================================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    font-size:1.35rem;
+
+    font-weight:800;
+
+    color:var(--text-primary);
+
+    letter-spacing:.5px;
+
+    transition:var(--transition);
+
+}
+
+.logo:hover{
+
+    color:var(--primary-color);
+
+}
+
+.logo span{
+
+    background:linear-gradient(
+        90deg,
+        #60a5fa,
+        #3b82f6,
+        #93c5fd
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+
+/* ==================================================
+   NAVIGATION
+================================================== */
+
+.navbar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:34px;
+
+}
+
+
+/* ==================================================
+   NAV LINKS
+================================================== */
+
+.navbar a{
+
+    position:relative;
+
+    color:var(--text-secondary);
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+
+/* Hover */
+
+.navbar a:hover{
+
+    color:var(--text-primary);
+
+}
+
+
+/* Animated Underline */
+
+.navbar a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    border-radius:10px;
+
+    background:var(--primary-color);
+
+    transition:width .30s ease;
+
+}
+
+.navbar a:hover::after{
+
+    width:100%;
+
+}
+.nav-list{
+    display:flex;
+    align-items:center;
+    gap:34px;
+    list-style:none;
+}
+
+/* ==================================================
+   ACTIVE LINK
+================================================== */
+
+.navbar a.active{
+
+    color:var(--primary-color);
+
+}
+
+.navbar a.active::after{
+
+    width:100%;
+
+}
+
+
+/* ==================================================
+   FOCUS ACCESSIBILITY
+================================================== */
+
+.navbar a:focus-visible,
+.logo:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:6px;
+
+    border-radius:4px;
+
+}
+
+
+/* ==================================================
+   MOBILE MENU BUTTON
+   (Used later in responsive.css)
+================================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:44px;
+
+    height:44px;
+
+    border:none;
+
+    background:transparent;
+
+    color:var(--text-primary);
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.menu-toggle:hover{
+
+    color:var(--primary-color);
+
+}
+
+.menu-toggle i{
+
+    font-size:1.35rem;
+
+}
+
+
+/* ==================================================
+   HEADER ANIMATION
+================================================== */
+
+@keyframes slideDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-100%);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.header{
+
+    animation:slideDown .6s ease;
+
+}

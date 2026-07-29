@@ -1,0 +1,404 @@
+/* ==================================================
+   LABS SECTION
+================================================== */
+
+#labs{
+
+    background:var(--background);
+
+}
+
+
+/* ==================================================
+   LABS GRID
+================================================== */
+
+.labs-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+
+/* ==================================================
+   LAB CARD
+================================================== */
+
+.labs-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:30px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:var(--transition);
+	cursor:pointer;
+
+}
+
+.labs-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* Left Accent Border */
+
+.labs-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:5px;
+
+    height:100%;
+
+    background:linear-gradient(
+        180deg,
+        var(--primary-color),
+        var(--accent-color)
+    );
+
+}
+
+.labs-card-link{
+
+    display:block;
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+.labs-card-link:hover{
+
+    text-decoration:none;
+
+}
+
+/* ==================================================
+   LAB CONTENT
+================================================== */
+
+.labs-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
+
+/* ==================================================
+   CATEGORY
+================================================== */
+
+.labs-category{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    align-self:flex-start;
+
+    padding:8px 16px;
+
+    margin-bottom:28px;
+
+    border-radius:999px;
+
+    background:rgba(59,130,246,.12);
+
+    color:var(--primary-color);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+.labs-category i{
+
+    font-size:.8rem;
+
+}
+
+/* ==================================================
+   TITLE
+================================================== */
+
+.labs-content h3{
+
+    margin-bottom:20px;
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+    line-height:1.3;
+
+}
+
+.labs-content h3 a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--text-primary);
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+.labs-content h3 a:hover{
+
+    color:var(--primary-color);
+
+}
+
+.labs-content h3 i{
+
+    font-size:.85rem;
+
+}
+
+/* ==================================================
+   ARTICLE META
+================================================== */
+
+.labs-meta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:22px;
+
+}
+
+.labs-meta .chip{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:.82rem;
+
+}
+
+.labs-meta i{
+
+    color:var(--primary-color);
+
+}
+
+/* ==================================================
+   DESCRIPTION
+================================================== */
+
+.labs-content p{
+
+    margin-bottom:24px;
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+    font-size:1rem;
+	max-width:900px;
+}
+
+/* ==================================================
+   DIVIDER
+================================================== */
+
+.labs-content hr{
+
+    border:none;
+
+    height:1px;
+
+    background:rgba(255,255,255,.08);
+
+    margin:28px 0;
+
+}
+
+/* ==================================================
+   TAGS
+================================================== */
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+
+
+
+/* ==================================================
+   CARD HOVER EFFECTS
+================================================== */
+
+.labs-card:hover .labs-category{
+
+    background:rgba(59,130,246,.18);
+
+}
+
+.labs-card:hover h3 a{
+
+    color:var(--primary-color);
+
+}
+
+
+/* ==================================================
+   SHINE EFFECT
+================================================== */
+
+.labs-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.12),
+
+        transparent
+
+    );
+
+    transform:skewX(-25deg);
+
+    transition:left .8s ease;
+
+    pointer-events:none;
+
+}
+
+.labs-card:hover::after{
+
+    left:150%;
+
+}
+
+
+/* ==================================================
+   ENTRANCE ANIMATION
+================================================== */
+
+.labs-card{
+
+    animation:fadeUp .7s ease both;
+
+}
+
+.labs-card:nth-child(2){
+
+    animation-delay:.15s;
+
+}
+
+.labs-card:nth-child(3){
+
+    animation-delay:.30s;
+
+}
+
+.labs-card:nth-child(4){
+
+    animation-delay:.45s;
+
+}
+
+
+/* ==================================================
+   ACCESSIBILITY
+================================================== */
+
+.labs-card:focus-within{
+
+    border-color:var(--primary-color);
+
+    box-shadow:0 0 0 3px rgba(59,130,246,.18);
+
+}
+
+
+/* ==================================================
+   REDUCED MOTION
+================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .labs-card,
+    .labs-card::after{
+
+        animation:none;
+
+        transition:none;
+
+    }
+
+}
+
+
+/* ==================================================
+   PRINT
+================================================== */
+
+@media print{
+
+    .labs-card{
+
+        page-break-inside:avoid;
+
+        box-shadow:none;
+
+    }
+
+}

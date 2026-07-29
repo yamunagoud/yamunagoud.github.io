@@ -1,0 +1,833 @@
+/* ==================================================
+   PROJECTS SECTION
+================================================== */
+
+#projects{
+
+    background:linear-gradient(
+        180deg,
+        var(--background),
+        #111827
+    );
+
+}
+
+
+/* ==================================================
+   PROJECT CARD
+================================================== */
+
+.project-card{
+
+    padding:38px;
+
+    margin-bottom:45px;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.project-card:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+/* ==================================================
+   PROJECT HEADER
+================================================== */
+
+.project-header{
+
+    display:grid;
+
+    grid-template-columns:1.3fr .9fr;
+
+    align-items:center;
+
+    gap:45px;
+
+}
+
+
+/* ==================================================
+   PROJECT CONTENT
+================================================== */
+
+.project-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/* ==================================================
+   CATEGORY BADGE
+================================================== */
+
+.project-category{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    align-self:flex-start;
+
+    padding:8px 18px;
+
+    margin-bottom:22px;
+
+    border-radius:999px;
+
+    background:rgba(59,130,246,.12);
+
+    color:var(--secondary-color);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+}
+
+.project-category i{
+
+    color:var(--primary-color);
+
+}
+
+
+/* ==================================================
+   PROJECT TITLE
+================================================== */
+
+.project-content h3{
+
+    margin-bottom:20px;
+
+    color:var(--text-primary);
+
+    font-size:2rem;
+
+    line-height:1.2;
+
+    font-weight:700;
+
+}
+
+.project-content h3 i{
+
+    margin-right:12px;
+
+    color:var(--primary-color);
+
+}
+
+
+/* ==================================================
+   PROJECT DESCRIPTION
+================================================== */
+
+.project-content p{
+
+    color:var(--text-secondary);
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+}
+
+
+/* ==================================================
+   PROJECT IMAGE
+================================================== */
+
+.project-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:16px;
+
+    border:1px solid var(--border-color);
+
+    background:#020617;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+
+/* ==================================================
+   IMAGE LINK
+================================================== */
+
+.project-image a{
+
+    display:block;
+
+}
+
+
+/* ==================================================
+   IMAGE
+================================================== */
+
+.project-image img{
+
+    display:block;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .45s ease;
+
+}
+
+
+/* ==================================================
+   IMAGE OVERLAY
+================================================== */
+
+.project-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        to top,
+
+        rgba(15,23,42,.35),
+
+        transparent
+
+    );
+
+    opacity:0;
+
+    transition:opacity .35s ease;
+
+    z-index:1;
+
+}
+
+
+/* ==================================================
+   IMAGE HOVER
+================================================== */
+
+.project-card:hover .project-image::before{
+
+    opacity:1;
+
+}
+
+.project-card:hover .project-image img{
+
+    transform:scale(1.05);
+
+}
+
+
+/* ==================================================
+   PROJECT BORDER EFFECT
+================================================== */
+
+.project-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:5px;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        180deg,
+
+        var(--primary-color),
+
+        var(--accent-color)
+
+    );
+
+}
+
+
+/* ==================================================
+   PROJECT HOVER
+================================================== */
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* ==================================================
+   CONTENT SPACING
+================================================== */
+
+.project-content>*{
+
+    width:100%;
+
+}
+/* ==================================================
+   PROJECT STATISTICS
+================================================== */
+
+.project-stats{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-top:35px;
+
+    margin-bottom:35px;
+
+}
+
+.project-stats span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    border:1px solid var(--border-color);
+
+    border-radius:999px;
+
+    background:rgba(59,130,246,.08);
+
+    color:var(--text-secondary);
+
+    font-size:.90rem;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+.project-stats span i{
+
+    color:var(--primary-color);
+
+    font-size:.95rem;
+
+}
+
+.project-stats span:hover{
+
+    border-color:var(--primary-color);
+
+    background:rgba(59,130,246,.15);
+
+    color:var(--text-primary);
+
+}
+
+
+/* ==================================================
+   TECHNOLOGY STACK
+================================================== */
+
+.tech-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:30px;
+
+}
+
+.tech-stack span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:var(--surface-light);
+
+    border:1px solid var(--border-color);
+
+    color:var(--text-secondary);
+
+    font-size:.90rem;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+.tech-stack span:hover{
+
+    background:rgba(59,130,246,.12);
+
+    border-color:var(--primary-color);
+
+    color:var(--primary-color);
+
+}
+
+
+/* ==================================================
+   PROJECT HIGHLIGHTS
+================================================== */
+
+.project-highlights{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:35px;
+
+}
+
+.project-highlights span{
+
+    position:relative;
+
+    padding:10px 18px 10px 32px;
+
+    border-radius:999px;
+
+    background:rgba(34,197,94,.08);
+
+    border:1px solid rgba(34,197,94,.25);
+
+    color:var(--text-secondary);
+
+    font-size:.90rem;
+
+    transition:var(--transition);
+
+}
+
+.project-highlights span::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:14px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:var(--success);
+
+}
+
+.project-highlights span:hover{
+
+    background:rgba(34,197,94,.15);
+
+    color:var(--text-primary);
+
+}
+
+
+/* ==================================================
+   PROJECT LINKS
+================================================== */
+
+.project-links{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:10px;
+
+}
+
+.project-links .btn{
+
+    min-width:180px;
+
+}
+
+.project-links .btn i{
+
+    font-size:1rem;
+
+}
+
+
+/* ==================================================
+   PRIMARY BUTTON
+================================================== */
+
+.project-links .btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(59,130,246,.30);
+
+}
+
+
+/* ==================================================
+   SECONDARY BUTTON
+================================================== */
+
+.project-links .btn-secondary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.20);
+
+}
+
+
+/* ==================================================
+   PROJECT SPACING
+================================================== */
+
+.project-card + .project-card{
+
+    margin-top:50px;
+
+}
+
+
+/* ==================================================
+   PROJECT TRANSITIONS
+================================================== */
+
+.project-card,
+.project-image,
+.project-image img,
+.project-links .btn,
+.project-stats span,
+.tech-stack span,
+.project-highlights span{
+
+    transition:all .30s ease;
+
+}
+
+
+/* ==================================================
+   FOCUS ACCESSIBILITY
+================================================== */
+
+.project-links a:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+    border-radius:10px;
+
+}
+/* ==================================================
+   IMAGE SHINE EFFECT
+================================================== */
+
+.project-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.15),
+
+        transparent
+
+    );
+
+    transform:skewX(-25deg);
+
+    transition:left .75s ease;
+
+    pointer-events:none;
+
+}
+
+.project-card:hover .project-image::after{
+
+    left:150%;
+
+}
+
+
+/* ==================================================
+   PROJECT CONTENT ANIMATION
+================================================== */
+
+.project-content > *{
+
+    transition:all .3s ease;
+
+}
+
+.project-card:hover .project-content h3{
+
+    color:var(--primary-color);
+
+}
+
+.project-card:hover .project-category{
+
+    background:rgba(59,130,246,.18);
+
+}
+
+
+/* ==================================================
+   PROJECT IMAGE SHADOW
+================================================== */
+
+.project-card:hover .project-image{
+
+    box-shadow:
+
+        0 25px 50px rgba(0,0,0,.45),
+
+        0 0 20px rgba(59,130,246,.12);
+
+}
+
+
+/* ==================================================
+   CARD ENTRANCE ANIMATION
+================================================== */
+
+.project-card{
+
+    animation:projectFade .7s ease both;
+
+}
+
+.project-card:nth-child(2){
+
+    animation-delay:.15s;
+
+}
+
+.project-card:nth-child(3){
+
+    animation-delay:.3s;
+
+}
+
+.project-card:nth-child(4){
+
+    animation-delay:.45s;
+
+}
+
+
+/* ==================================================
+   PROJECT ANIMATION
+================================================== */
+
+@keyframes projectFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ==================================================
+   HOVER LIFT EFFECT
+================================================== */
+
+.project-card{
+
+    will-change:transform;
+
+}
+
+.project-card:hover{
+
+    box-shadow:
+
+        0 20px 60px rgba(0,0,0,.45);
+
+}
+
+
+/* ==================================================
+   IMAGE PERFORMANCE
+================================================== */
+
+.project-image img{
+
+    backface-visibility:hidden;
+
+    transform:translateZ(0);
+
+}
+
+
+/* ==================================================
+   SELECTION
+================================================== */
+
+.project-content::selection,
+.project-content *::selection{
+
+    background:var(--primary-color);
+
+    color:#fff;
+
+}
+
+
+/* ==================================================
+   KEYBOARD ACCESSIBILITY
+================================================== */
+
+.project-card:focus-within{
+
+    border-color:var(--primary-color);
+
+    box-shadow:
+
+        0 0 0 3px rgba(59,130,246,.18);
+
+}
+
+
+/* ==================================================
+   REDUCED MOTION
+================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .project-card,
+    .project-image,
+    .project-image img,
+    .project-links .btn,
+    .project-content>*{
+
+        animation:none;
+
+        transition:none;
+
+    }
+
+}
+
+
+/* ==================================================
+   PRINT STYLES
+================================================== */
+
+@media print{
+
+    #projects{
+
+        background:#fff;
+
+    }
+
+    .project-card{
+
+        page-break-inside:avoid;
+
+        box-shadow:none;
+
+        border:1px solid #ccc;
+
+    }
+
+    .project-links{
+
+        display:none;
+
+    }
+
+}
+
+
+/* ==================================================
+   END OF PROJECTS
+================================================== */

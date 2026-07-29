@@ -1,0 +1,311 @@
+/* ==================================================
+   CONTACT SECTION
+================================================== */
+
+#contact{
+
+    background:var(--background);
+
+}
+
+
+/* ==================================================
+   CONTACT GRID
+================================================== */
+
+.contact-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+/* ==================================================
+   CONTACT CARD
+================================================== */
+
+.contact-card{
+
+    width:100%;
+
+    max-width:850px;
+
+    padding:40px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+/* ==================================================
+   LEFT ACCENT BORDER
+================================================== */
+
+.contact-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:5px;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        180deg,
+
+        var(--primary-color),
+
+        var(--accent-color)
+
+    );
+
+}
+
+
+/* ==================================================
+   CONTACT ITEM
+================================================== */
+
+.contact-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:22px;
+
+    padding:24px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.contact-item:last-child{
+
+    border-bottom:none;
+
+    padding-bottom:0;
+
+}
+
+
+/* ==================================================
+   ICON
+================================================== */
+
+.contact-item i{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:rgba(59,130,246,.12);
+
+    color:var(--primary-color);
+
+    font-size:1.3rem;
+
+    flex-shrink:0;
+
+    transition:var(--transition);
+
+}
+
+
+/* ==================================================
+   CONTENT
+================================================== */
+
+.contact-item div{
+
+    flex:1;
+
+}
+
+.contact-item h3{
+
+    margin-bottom:8px;
+
+    color:var(--text-primary);
+
+    font-size:1.15rem;
+
+}
+
+.contact-item p{
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+}
+
+.contact-item a{
+
+    color:var(--text-secondary);
+
+    transition:var(--transition);
+
+    word-break:break-word;
+
+}
+
+.contact-item a:hover{
+
+    color:var(--primary-color);
+
+}
+
+
+/* ==================================================
+   CARD HOVER
+================================================== */
+
+.contact-card:hover .contact-item i{
+
+    background:var(--primary-color);
+
+    color:#fff;
+
+}
+
+
+/* ==================================================
+   INDIVIDUAL ITEM HOVER
+================================================== */
+
+.contact-item{
+
+    transition:var(--transition);
+
+}
+
+.contact-item:hover{
+
+    transform:translateX(8px);
+
+}
+
+
+/* ==================================================
+   SHINE EFFECT
+================================================== */
+
+.contact-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.10),
+
+        transparent
+
+    );
+
+    transform:skewX(-25deg);
+
+    transition:left .8s ease;
+
+    pointer-events:none;
+
+}
+
+.contact-card:hover::after{
+
+    left:150%;
+
+}
+
+
+/* ==================================================
+   ENTRANCE ANIMATION
+================================================== */
+
+.contact-card{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+
+/* ==================================================
+   FOCUS ACCESSIBILITY
+================================================== */
+
+.contact-item a:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+    border-radius:4px;
+
+}
+
+
+/* ==================================================
+   REDUCED MOTION
+================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .contact-card,
+    .contact-item{
+
+        animation:none;
+
+        transition:none;
+
+    }
+
+}
+
+
+/* ==================================================
+   PRINT
+================================================== */
+
+@media print{
+
+    .contact-card{
+
+        box-shadow:none;
+
+        border:1px solid #ccc;
+
+    }
+
+}

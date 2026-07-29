@@ -1,0 +1,321 @@
+/* ==================================================
+   ABOUT SECTION
+================================================== */
+
+#about{
+
+    background:var(--background);
+
+}
+
+
+/* ==================================================
+   ABOUT LAYOUT
+================================================== */
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1.6fr .9fr;
+
+    gap:60px;
+
+    align-items:start;
+
+}
+
+
+/* ==================================================
+   ABOUT CONTENT
+================================================== */
+
+.about-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.about-content p{
+
+    margin-bottom:24px;
+
+    color:var(--text-secondary);
+
+    font-size:1.05rem;
+
+    text-align:justify;
+
+}
+
+
+.about-content p:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+/* ==================================================
+   QUICK FACTS CARD
+================================================== */
+
+.about-card{
+
+    padding:35px;
+
+}
+
+
+.about-card h3{
+
+    margin-bottom:28px;
+
+    font-size:1.4rem;
+
+    color:var(--text-primary);
+
+}
+
+
+/* ==================================================
+   FACT ITEM
+================================================== */
+
+.about-fact{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding:18px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+
+.about-fact:last-child{
+
+    border-bottom:none;
+
+    padding-bottom:0;
+
+}
+
+
+.about-fact i{
+
+    margin-top:4px;
+
+    font-size:1.2rem;
+
+    color:var(--primary-color);
+
+    width:22px;
+
+    text-align:center;
+
+}
+
+
+.about-fact strong{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    color:var(--text-primary);
+
+    font-size:1rem;
+
+}
+
+
+.about-fact p{
+
+    margin:0;
+
+    color:var(--text-secondary);
+
+    font-size:.95rem;
+
+}
+
+
+/* ==================================================
+   EXPERTISE SECTION
+================================================== */
+
+.expertise-section{
+
+    margin-top:40px;
+
+}
+
+
+/* ==================================================
+   EXPERTISE GRID
+================================================== */
+
+.expertise-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+    margin-top:55px;
+
+}
+
+
+/* ==================================================
+   EXPERTISE CARD
+================================================== */
+
+.expertise-card{
+
+    padding:30px;
+
+    height:100%;
+
+    transition:var(--transition);
+
+}
+
+
+.expertise-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* ==================================================
+   EXPERTISE ICON
+================================================== */
+
+.expertise-icon{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:60px;
+
+    height:60px;
+
+    margin-bottom:24px;
+
+    border-radius:16px;
+
+    background:rgba(59,130,246,.12);
+
+    color:var(--primary-color);
+
+    font-size:1.5rem;
+
+}
+
+
+/* ==================================================
+   EXPERTISE TITLE
+================================================== */
+
+.expertise-card h3{
+
+    margin-bottom:20px;
+
+    color:var(--text-primary);
+
+    font-size:1.2rem;
+
+    line-height:1.4;
+
+}
+
+
+/* ==================================================
+   EXPERTISE LIST
+================================================== */
+
+.expertise-card ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+.expertise-card li{
+
+    position:relative;
+
+    padding-left:22px;
+
+    color:var(--text-secondary);
+
+    font-size:.95rem;
+
+}
+
+
+.expertise-card li::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:10px;
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:var(--primary-color);
+
+}
+
+
+/* ==================================================
+   CARD HOVER EFFECT
+================================================== */
+
+.expertise-card:hover .expertise-icon{
+
+    background:var(--primary-color);
+
+    color:#fff;
+
+    transition:var(--transition);
+
+}
+
+
+/* ==================================================
+   FADE-IN ANIMATION
+================================================== */
+
+.about-content,
+.about-card,
+.expertise-card{
+
+    animation:fadeUp .8s ease;
+
+}

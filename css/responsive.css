@@ -1,0 +1,364 @@
+/* ==================================================
+   LARGE TABLETS (≤1024px)
+================================================== */
+
+@media (max-width:1024px){
+
+    /* ---------- Hero ---------- */
+
+    .hero-container{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+        text-align:center;
+
+    }
+
+    .hero-content{
+
+        align-items:center;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-terminal{
+
+        max-width:700px;
+
+        margin:0 auto;
+
+    }
+
+    /* ---------- About ---------- */
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    /* ---------- Projects ---------- */
+
+    .project-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    /* ---------- Contact ---------- */
+
+    .contact-card{
+
+        max-width:100%;
+
+    }
+
+}
+
+
+/* ==================================================
+   TABLETS (≤768px)
+================================================== */
+
+@media (max-width:768px){
+
+    /* ---------- Global ---------- */
+
+    .container{
+
+        width:min(100% - 2rem,1200px);
+
+    }
+
+    section{
+
+        padding:80px 0;
+
+    }
+
+    .section-title{
+
+        font-size:2rem;
+
+    }
+
+    .section-description{
+
+        font-size:1rem;
+
+    }
+
+    /* ---------- Header ---------- */
+
+    .header .container{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    .navbar{
+
+        width:100%;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:18px;
+
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero-content h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .hero-content p{
+
+        font-size:1rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    /* ---------- Cards ---------- */
+
+    .projects-grid,
+    .labs-grid,
+    .certificates-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .project-card,
+    .labs-card,
+    .certificate-card,
+    .contact-card{
+
+        padding:30px;
+
+    }
+
+    /* ---------- Project ---------- */
+
+    .project-links{
+
+        flex-direction:column;
+
+    }
+
+    .project-links .btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    /* ---------- Contact ---------- */
+
+    .contact-item{
+
+        gap:18px;
+
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE (≤576px)
+================================================== */
+
+@media (max-width:576px){
+
+    html{
+
+        font-size:15px;
+
+    }
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+    .container{
+
+        width:min(100% - 1.5rem,1200px);
+
+    }
+
+    /* ---------- Typography ---------- */
+
+    .section-label{
+
+        font-size:.75rem;
+
+    }
+
+    .section-title{
+
+        font-size:1.8rem;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2.2rem;
+
+        line-height:1.2;
+
+    }
+
+    /* ---------- Buttons ---------- */
+
+    .btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    /* ---------- Terminal ---------- */
+
+    .hero-terminal{
+
+        padding:20px;
+
+    }
+
+    .terminal-body{
+
+        font-size:.85rem;
+
+    }
+
+    /* ---------- Cards ---------- */
+
+    .project-card,
+    .labs-card,
+    .certificate-card{
+
+        padding:25px;
+
+    }
+
+    /* ---------- Contact ---------- */
+
+    .contact-card{
+
+        padding:30px 25px;
+
+    }
+
+    .contact-item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .contact-item i{
+
+        width:50px;
+
+        height:50px;
+
+    }
+
+    /* ---------- Footer ---------- */
+
+    .footer{
+
+        padding:30px 0;
+
+    }
+
+    .footer p{
+
+        font-size:.9rem;
+
+    }
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE (≤400px)
+================================================== */
+
+@media (max-width:400px){
+
+    .hero-content h1{
+
+        font-size:2rem;
+
+    }
+
+    .section-title{
+
+        font-size:1.6rem;
+
+    }
+
+    .project-card,
+    .labs-card,
+    .certificate-card,
+    .contact-card{
+
+        padding:20px;
+
+    }
+
+    .hero-terminal{
+
+        overflow-x:auto;
+
+    }
+
+    .terminal-body{
+
+        white-space:pre;
+
+        min-width:320px;
+
+    }
+
+}
